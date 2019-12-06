@@ -1,0 +1,68 @@
+.container-fluid { 
+margin: 0 auto;
+max-width: 1150px;
+}
+/* .container { 
+
+  background:	rgb(255, 255, 255);
+  } */
+
+.carousel-item {
+  height: 65vh;
+  min-height: 500px;
+  min-width: 900px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.card{
+
+    padding: 20px; 
+    height: 100%;
+    width: 100%;
+}
+.item2{
+    height: 100%;
+}
+
+.conteneur{
+    width: 600px;
+    height: 300px;
+    border: 1px rgb(255, 255, 255) solid; 
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .grid-container {
+    display:  grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px 5px;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+  }
+  .grid-container1 {
+    display:  grid;
+    grid-template-columns: auto auto  ;
+    grid-gap: 20px 5px;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+  }
+  
+  .grid-container > .div {
+    background-color: rgba(0, 255, 98, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    
+  }
+
+
+
+
+
+
+
