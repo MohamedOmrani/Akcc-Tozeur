@@ -1,0 +1,288 @@
+// -- phpMyAdmin SQL Dump
+// -- version 4.1.14
+// -- http://www.phpmyadmin.net
+// --
+// -- Client :  127.0.0.1
+// -- Généré le :  Mar 12 Janvier 2021 à 21:18
+// -- Version du serveur :  5.6.17
+// -- Version de PHP :  5.5.12
+
+// SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+// SET time_zone = "+00:00";
+
+
+// /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+// /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+// /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+// /*!40101 SET NAMES utf8 */;
+
+// --
+// -- Base de données :  `oppa`
+// --
+
+// -- --------------------------------------------------------
+
+// --
+// -- Structure de la table `adds`
+// --
+
+// CREATE TABLE IF NOT EXISTS `adds` (
+//   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+//   `firstname` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+//   `lastname` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+//   `mailinput` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+//   `Tel` int(11) NOT NULL,
+//   `city` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+//   `Job` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+//   `created_at` timestamp NULL DEFAULT NULL,
+//   `updated_at` timestamp NULL DEFAULT NULL,
+//   PRIMARY KEY (`id`)
+// ) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=6 ;
+
+// --
+// -- Contenu de la table `adds`
+// --
+
+// INSERT INTO `adds` (`id`, `firstname`, `lastname`, `mailinput`, `Tel`, `city`, `Job`, `created_at`, `updated_at`) VALUES
+// (1, 'ASUS', 'mohamed', 'mohamedomrani250@gmail.com', 555, 'SFAX', 'ingenieur', '2019-07-02 20:30:58', '2019-07-02 20:30:58'),
+// (2, 'a@a.com', 'mohamed', 'mohamedomrani250@gmail.com', 25252525, 'tunis', 'etudient', '2019-07-06 14:37:56', '2019-07-06 14:37:56'),
+// (3, 'ma', 'karim', 'mohamedomrani250@gmail.com', 555, 'SFAX', 'ingenieur', '2019-07-06 14:47:54', '2019-07-06 14:47:54'),
+// (4, 'ma', 'a@a.com', 'mohamedomrani250@gmail.com', 555, 'SFAX', 'ingenieur', '2019-10-30 15:35:39', '2019-10-30 15:35:39'),
+// (5, 'ASUS', 'mohamed', 'mohamedomrani250@gmail.com', 39555555, 'New york', 'etudient', '2019-12-02 19:44:25', '2019-12-02 19:44:25');
+
+// -- --------------------------------------------------------
+
+// --
+// -- Structure de la table `agendas`
+// --
+
+// CREATE TABLE IF NOT EXISTS `agendas` (
+//   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+//   `titre` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+//   `body` mediumtext COLLATE utf8mb4_unicode_ci NOT NULL,
+//   `lieu` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+//   `datepicker` date NOT NULL,
+//   `datetimepicker` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+//   `created_at` timestamp NULL DEFAULT NULL,
+//   `updated_at` timestamp NULL DEFAULT NULL,
+//   `cover_image` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+//   PRIMARY KEY (`id`)
+// ) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=9 ;
+
+// --
+// -- Contenu de la table `agendas`
+// --
+
+// INSERT INTO `agendas` (`id`, `titre`, `body`, `lieu`, `datepicker`, `datetimepicker`, `created_at`, `updated_at`, `cover_image`) VALUES
+// (1, 'Post edited', 'cover_imagecover_imagecover_imagecover_imagecover_imagecover_imagecover_imagecover_imagecover_imagecover_imagecover_imagecover_imagecover_imagecover_imagecover_imagecover_imagecover_imagecover_imagecover_imagecover_imagecover_imagecover_imagecover_imagecover_imagecover_imagecover_imagecover_imagecover_imagecover_imagecover_imagecover_imagecover_imagecover_imagecover_imagecover_imagecover_imagecover_imagecover_imagecover_imagecover_imagecover_imagecover_image', 'cover_imagecover_imagecover_image', '2019-07-10', '12:32 AM', '2019-07-02 20:32:32', '2019-07-02 20:32:32', '52666767_388049838594886_4799127797203206144_n_1562106752.jpg'),
+// (2, 'Post edited', 'ddddddddddddddd', 'Vous avez raté un événement qui compte pour vous', '2019-07-24', '12:27 AM', '2019-07-03 21:27:17', '2019-07-03 21:27:17', '52372905_402346560333311_3942853288524775424_n_1562196437.jpg'),
+// (3, 'Paradise Kids class="dropzone" id="dropzone">', 'Paradise Kids class="dropzone" id="dropzone">Paradise Kids class="dropzone" id="dropzone">Paradise Kids class="dropzone" id="dropzone">Paradise Kids class="dropzone" id="dropzone">Paradise Kids class="dropzone" id="dropzone">Paradise Kids class="dropzone" id="dropzone">Paradise Kids class="dropzone" id="dropzone">Paradise Kids class="dropzone" id="dropzone">Paradise Kids class="dropzone" id="dropzone">Paradise Kids class="dropzone" id="dropzone">Paradise Kids class="dropzone" id="dropzone">Paradise Kids class="dropzone" id="dropzone">Paradise Kids class="dropzone" id="dropzone">Paradise Kids class="dropzone" id="dropzone">Paradise Kids class="dropzone" id="dropzone">Paradise Kids class="dropzone" id="dropzone">Paradise Kids class="dropzone" id="dropzone">Paradise Kids class="dropzone" id="dropzone">Paradise Kids class="dropzone" id="dropzone">Paradise Kids class="dropzone" id="dropzone">Paradise Kids class="dropzone" id="dropzone">Paradise Kids class="dropzone" id="dropzone">Paradise Kids class="dropzone" id="dropzone">', 'Paradise Kids class="dropzone" id="dropzone">Paradise Kids class="dropzone" id="dropzone">', '2019-07-31', '1:35 AM', '2019-07-03 21:27:42', '2019-12-03 20:34:45', 'logo-4C--FV_1575408885.png'),
+// (4, 'a', '/adds/adds/adds', 'Vous avez raté un événement qui compte pour vous', '2019-07-19', '3:55 PM', '2019-07-05 11:56:24', '2019-07-05 11:56:24', '7c29f05a_z_1562334983.jpg'),
+// (8, 'Paradise Kids', 'Paradise KidsParadise KidsParadise KidsParadise KidsParadise KidsParadise KidsParadise KidsParadise KidsParadise KidsParadise KidsParadise KidsParadise KidsParadise KidsParadise KidsParadise KidsParadise Kids', 'Paradise KidsParadise KidsParadise Kids', '2019-12-12', '8:43 PM', '2019-12-03 18:43:56', '2019-12-03 18:43:56', 'ccig logo_1575402236.jpg');
+
+// -- --------------------------------------------------------
+
+// --
+// -- Structure de la table `communique_de_presses`
+// --
+
+// CREATE TABLE IF NOT EXISTS `communique_de_presses` (
+//   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+//   `titre` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+//   `created_at` timestamp NULL DEFAULT NULL,
+//   `updated_at` timestamp NULL DEFAULT NULL,
+//   PRIMARY KEY (`id`)
+// ) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=4 ;
+
+// --
+// -- Contenu de la table `communique_de_presses`
+// --
+
+// INSERT INTO `communique_de_presses` (`id`, `titre`, `created_at`, `updated_at`) VALUES
+// (1, 'Post edited', '2019-07-02 20:33:36', '2019-07-02 20:33:36'),
+// (2, 'Post edited', '2019-07-06 14:37:20', '2019-07-06 14:37:20'),
+// (3, 'Post edited', '2019-12-02 21:25:09', '2019-12-02 21:25:09');
+
+// -- --------------------------------------------------------
+
+// --
+// -- Structure de la table `documents`
+// --
+
+// CREATE TABLE IF NOT EXISTS `documents` (
+//   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+//   `titre` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+//   `created_at` timestamp NULL DEFAULT NULL,
+//   `updated_at` timestamp NULL DEFAULT NULL,
+//   `file` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+//   PRIMARY KEY (`id`)
+// ) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=6 ;
+
+// --
+// -- Contenu de la table `documents`
+// --
+
+// INSERT INTO `documents` (`id`, `titre`, `created_at`, `updated_at`, `file`) VALUES
+// (3, 'filefilefilefile', '2019-07-05 14:23:08', '2019-12-03 21:03:16', 'city_1575410596.txt'),
+// (5, 'Paradise Kids', '2019-12-03 20:41:09', '2019-12-03 20:41:09', 'Recu print - Inscription universitaire en ligne_1575409268.pdf');
+
+// -- --------------------------------------------------------
+
+// --
+// -- Structure de la table `image_uploads`
+// --
+
+// CREATE TABLE IF NOT EXISTS `image_uploads` (
+//   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+//   `filename` text COLLATE utf8mb4_unicode_ci NOT NULL,
+//   `created_at` timestamp NULL DEFAULT NULL,
+//   `updated_at` timestamp NULL DEFAULT NULL,
+//   PRIMARY KEY (`id`)
+// ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=1 ;
+
+// -- --------------------------------------------------------
+
+// --
+// -- Structure de la table `mediass`
+// --
+
+// CREATE TABLE IF NOT EXISTS `mediass` (
+//   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+//   `titre` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+//   `body` mediumtext COLLATE utf8mb4_unicode_ci NOT NULL,
+//   `datepicker` date NOT NULL,
+//   `created_at` timestamp NULL DEFAULT NULL,
+//   `updated_at` timestamp NULL DEFAULT NULL,
+//   PRIMARY KEY (`id`)
+// ) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=3 ;
+
+// --
+// -- Contenu de la table `mediass`
+// --
+
+// INSERT INTO `mediass` (`id`, `titre`, `body`, `datepicker`, `created_at`, `updated_at`) VALUES
+// (1, 'Post edited', 'poste create by a@a.com', '2019-07-12', '2019-07-02 14:14:58', '2019-07-02 14:14:58'),
+// (2, 'https://openclassrooms.com/forum/sujet/bootstrap-center-la-navbar', 'https://openclassrooms.com/forum/sujet/bootstrap-center-la-navbar', '2019-07-13', '2019-07-02 14:18:03', '2019-07-02 14:18:03');
+
+// -- --------------------------------------------------------
+
+// --
+// -- Structure de la table `migrations`
+// --
+
+// CREATE TABLE IF NOT EXISTS `migrations` (
+//   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+//   `migration` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+//   `batch` int(11) NOT NULL,
+//   PRIMARY KEY (`id`)
+// ) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=14 ;
+
+// --
+// -- Contenu de la table `migrations`
+// --
+
+// INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
+// (1, '2014_10_12_000000_create_users_table', 1),
+// (2, '2014_10_12_100000_create_password_resets_table', 1),
+// (3, '2019_04_10_225700_create_posts_table', 1),
+// (4, '2019_04_11_131222_create_adds_table', 1),
+// (5, '2019_04_13_112742_add_cover_image_to_posts', 1),
+// (6, '2019_06_01_090945_create_agendas_table', 1),
+// (7, '2019_06_01_093345_add_cover_image_to_agendas', 1),
+// (8, '2019_06_04_014950_create_documents_table', 1),
+// (9, '2019_06_04_021403_add_file_to_documents', 1),
+// (10, '2019_06_05_021143_create_presses_table', 1),
+// (11, '2019_06_28_191705_create_image_uploads_table', 1),
+// (12, '2019_07_01_192752_create_Communiqués_de_Presse_table', 1),
+// (13, '2019_07_02_140712_create_mediass_table', 1);
+
+// -- --------------------------------------------------------
+
+// --
+// -- Structure de la table `password_resets`
+// --
+
+// CREATE TABLE IF NOT EXISTS `password_resets` (
+//   `email` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+//   `token` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+//   `created_at` timestamp NULL DEFAULT NULL,
+//   KEY `password_resets_email_index` (`email`)
+// ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+// -- --------------------------------------------------------
+
+// --
+// -- Structure de la table `posts`
+// --
+
+// CREATE TABLE IF NOT EXISTS `posts` (
+//   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+//   `titre` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+//   `body` mediumtext COLLATE utf8mb4_unicode_ci NOT NULL,
+//   `created_at` timestamp NULL DEFAULT NULL,
+//   `updated_at` timestamp NULL DEFAULT NULL,
+//   `cover_image` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+//   PRIMARY KEY (`id`)
+// ) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=14 ;
+
+// --
+// -- Contenu de la table `posts`
+// --
+
+// INSERT INTO `posts` (`id`, `titre`, `body`, `created_at`, `updated_at`, `cover_image`) VALUES
+// (3, 'Paradise Kids', 'ffff', '2019-07-05 12:30:53', '2019-07-05 12:30:53', '1562337052879Santé-Afrique-Tourisme-Médical.jpg'),
+// (4, 'Paradise Kids', 'hhhh', '2019-07-05 14:32:42', '2019-07-05 14:32:42', '156234436241952476587_2069499539807192_3198938276815699968_n.png'),
+// (5, 'Post edited', 'fff', '2019-07-05 17:15:31', '2019-07-05 17:15:31', '156235413138752476587_2069499539807192_3198938276815699968_n.png'),
+// (6, 'Post edited', 'dc', '2019-07-05 17:18:03', '2019-07-05 17:18:03', '15623542832104a36e314016aa914f203ea6b7d579dc6_large.jpeg'),
+// (7, 'Paradise Kids', 'ddd', '2019-07-05 17:18:56', '2019-07-05 17:18:56', '156235433589552372905_402346560333311_3942853288524775424_n.jpg'),
+// (9, 'Post edited', 'rrr', '2019-07-06 14:35:25', '2019-07-06 14:35:25', '1562430925041images (1).jpg'),
+// (10, 'Post edited', 'ffff', '2019-10-30 15:08:45', '2019-10-30 15:08:45', '1572451725354download.png'),
+// (11, 'Post edited', 'jjj', '2019-12-02 19:42:59', '2019-12-02 19:42:59', '15753193791492019-09-11-16-28-www.oous.rnu.tn.png'),
+// (12, 'a', 'hg', '2019-12-02 20:22:32', '2019-12-02 20:22:32', '1575321752004ccig logo.jpg'),
+// (13, 'a', 'aaa', '2019-12-03 18:21:44', '2019-12-03 18:21:44', '157540090419123795606_374475029659647_6162748365206662530_n.jpg');
+
+// -- --------------------------------------------------------
+
+// --
+// -- Structure de la table `presses`
+// --
+
+// CREATE TABLE IF NOT EXISTS `presses` (
+//   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+//   `titre` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+//   `body` mediumtext COLLATE utf8mb4_unicode_ci NOT NULL,
+//   `datepicker` date NOT NULL,
+//   `created_at` timestamp NULL DEFAULT NULL,
+//   `updated_at` timestamp NULL DEFAULT NULL,
+//   PRIMARY KEY (`id`)
+// ) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=4 ;
+
+// --
+// -- Contenu de la table `presses`
+// --
+
+// INSERT INTO `presses` (`id`, `titre`, `body`, `datepicker`, `created_at`, `updated_at`) VALUES
+// (2, 'Post edited<button type="submit" class="btn btn-danger">Delete</', 'poste create by a@a.com', '2019-07-05', '2019-07-02 20:33:26', '2019-07-02 20:40:45'),
+// (3, 'Post edited', 'C’est dans ce contexte que s’est déroulée l’école du printemps organisée conjointement par l’Institut Pasteur de Tunis (IPT) et l’Université de Lyon dans le cadre du projet InSPIRES (Ingenious Science shops to promote Participatory Innovation, Research and Equity in Science). L’école du printemps InSPIRES, tenue les 22 et 23 avril à l’IPT, a réuni des participants venant de pays différents (Tunisie, Sénégal, Bénin, Canada, France etc.) avec des profils variés (étudiants, doctorants, enseignants, chercheurs, praticiens, experts et acteurs associatifs) autour des Boutiques des Sciences (Science Shops, en anglais). L’objectif de la rencontre était de favoriser l’interaction durable entre chercheurs et acteurs de la société civile pour développer les synergies nécessaires à la co-construction de projets de recherche permettant de proposer des réponses adaptées aux contextes locaux. C’était également l’occasion d’assister à des témoignages et des retours d’expérience des BDS.  La première journée a été consacrée à', '2019-07-03', '2019-07-05 14:31:12', '2019-07-05 14:31:12');
+
+// -- --------------------------------------------------------
+
+// --
+// -- Structure de la table `users`
+// --
+
+// CREATE TABLE IF NOT EXISTS `users` (
+//   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+//   `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+//   `email` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+//   `password` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+//   `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+//   `created_at` timestamp NULL DEFAULT NULL,
+//   `updated_at` timestamp NULL DEFAULT NULL,
+//   PRIMARY KEY (`id`),
+//   UNIQUE KEY `users_email_unique` (`email`)
+// ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=1 ;
+
+// /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+// /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+// /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
